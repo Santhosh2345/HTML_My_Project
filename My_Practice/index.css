@@ -132,3 +132,29 @@ h2{
     top: 0;
     border-radius: 10px;
 }
+
+nav{
+    float: left;
+    width: 30%;
+    background-color: lightblue;
+}
+
+article{
+    float: left;
+    width: 70%;
+    color: rgb(253, 253, 253);
+    background-color: lightcoral;
+}
+
+section::after{
+    display: table;
+    content: "";
+    clear:both;
+}
+
+@media (max-width: 600px){
+nav, article{
+ width: 100%;
+ height: auto;
+}
+}
