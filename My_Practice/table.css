@@ -1,4 +1,4 @@
-body{
+#whole_body{
     background-color: rgb(160, 231, 219);
 }
 #Page_Heading{
@@ -35,7 +35,7 @@ body{
     background-color: rgb(141, 240, 128);
 }
 
-th, td{
+.one{
     border: 1px solid rgb(0, 0, 0);
     border-collapse: collapse;
     text-align: center;
@@ -52,7 +52,7 @@ th, td{
     }
 }
 
-/* @media (max-wodth: 600px){
+/* @media (max-width: 600px){
     For Mobile
     .alginment_div1, .alginment_div2{
         width: 100%;
@@ -67,12 +67,24 @@ th, td{
 }
 
 .prototype{
-    width: 25%;
+    width: 25.7%;
     height: 200px;
-    background: linear-gradient(to right, rgb(92, 92, 223), rgb(93, 180, 209));
+    background: linear-gradient(to right, rgb(74, 74, 173), rgb(71 134 146));
     border: none;
-    border-radius: 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     position: relative;
+    clear:both;
+    display: inline-block;
+}
+
+@media (max-width: 600px){
+    .prototype{
+        width: 100%;
+        height: auto;
+    }
 }
 
 .head{
@@ -81,7 +93,11 @@ th, td{
     position: absolute;
     top: 0;
     height: 29px;
-    background:linear-gradient(to right, rgb(92, 92, 223), rgb(148, 198, 214));
+    background:linear-gradient(to right, rgb(104 104 221), rgb(71 134 146));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #close{
@@ -91,9 +107,16 @@ th, td{
   'GRAD' 0,
   'opsz' 48;
   position:relative;
-  color: rgb(252, 252, 252);
-  margin-left: 240px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-left: 216px;
   max-height: 29px;
+  font-size: 23px;
+  color:white
 
 }
 
@@ -104,6 +127,88 @@ th, td{
   'GRAD' 100,
   'opsz' 48;
   position: relative;
-  color: skyblue;
-  size: 50px;
+  color: rgb(143 220 252);
+  font-size: 63px;
+  float: left;
+  padding: 16px;
 }
+
+#dail_info{
+    padding: 23px;
+    padding-left: 4px;
+    padding-top: 18px;
+    float: left;
+}
+
+.dail_content{
+    line-height: 28px; 
+}
+
+#mat_phone{
+    font-size: 50px;
+    float:left;
+    padding: 5px;
+    padding-left: 19px;
+    position: relative;
+    top: 25px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border:none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    color: rgb(73 195 10);
+}
+
+
+#mat_phone_end{
+    font-size: 50px;
+    float:left;
+    padding: 5px;
+    padding-left: 13px;
+    position: relative;
+    top: 19px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    color:#f24242;
+}
+
+#table_inside{
+    padding: 21px;
+    padding-top: 14px;
+    position: absolute;
+    top: 110px;
+    
+}
+
+#inside_table{
+    size: 100px;
+    border: none;
+    border-collapse: collapse;
+    width: 334px;
+    display: table;
+    padding-left: 100px;
+    position:relative;
+    color: white;
+    background-color: rgba(3, 3, 3, 16%);
+}
+
+.two{
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px;
+    
+}
+
+#inside_table_thead{
+    font-size: 12.5px;
+}
+
+#inside_table_tbody{
+    font-size:12px;
+}
+
